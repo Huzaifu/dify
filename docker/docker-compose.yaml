@@ -386,6 +386,9 @@ services:
   # API service
   api:
     image: langgenius/dify-api:0.15.2
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
     restart: always
     environment:
       # Use the shared environment variables.
